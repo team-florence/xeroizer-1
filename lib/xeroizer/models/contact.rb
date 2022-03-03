@@ -55,6 +55,7 @@ module Xeroizer
       decimal       :discount # read only
       boolean       :has_attachments
       string        :xero_network_key
+      string        :company_number
 
       has_many  :addresses, :list_complete => true
       has_many  :phones, :list_complete => true
