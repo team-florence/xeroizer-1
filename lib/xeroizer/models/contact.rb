@@ -60,7 +60,7 @@ module Xeroizer
       has_many  :addresses, :list_complete => true
       has_many  :phones, :list_complete => true
       has_many  :contact_groups, :list_complete => true
-      has_many  :contact_persons, :internal_name => :contact_people, :list_complete => true
+      has_many  :contact_persons, :model_name => 'ContactPerson', :list_complete => true
 
       has_many :sales_tracking_categories, :model_name => 'ContactSalesTrackingCategory', :list_complete => true
       has_many :purchases_tracking_categories, :model_name => 'ContactPurchasesTrackingCategory', :list_complete => true
