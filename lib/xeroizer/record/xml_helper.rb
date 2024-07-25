@@ -124,6 +124,10 @@ module Xeroizer
                     value.each { | record | record.to_xml(b) }
                   }
                   nil
+                else
+                  return nil unless field[:api_name] == 'ContactPersons'
+                  b.tag!(field[:api_name], nil)
+                  nil
                 end
 
             end
